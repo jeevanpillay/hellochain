@@ -10,10 +10,10 @@ import (
 func main() {
 
 	params := starter.NewServerCommandParams(
-		"hcd",                  // name of the command
-		"hellochain AppDaemon", // description
-		starter.NewAppCreator(app.NewHelloChainApp),  // method for constructing an app
-		starter.NewAppExporter(app.NewHelloChainApp), // method for exporting chain state
+		"hcd",
+		"hellochain AppDaemon",
+		starter.NewAppCreator(app.NewHelloChainApp),
+		starter.NewAppExporter(app.NewHelloChainApp),
 	)
 
 	serverCmd := starter.NewServerCommand(params)

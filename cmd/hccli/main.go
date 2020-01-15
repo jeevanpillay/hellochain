@@ -5,11 +5,12 @@ import (
 
 	app "github.com/cosmos/sdk-tutorials/hellochain"
 	"github.com/cosmos/sdk-tutorials/hellochain/starter"
+	"github.com/cosmos/sdk-tutorials/hellochain/x/greeter"
 )
 
 func main() {
 
-	starter.BuildModuleBasics()
+	starter.BuildModuleBasics(greeter.AppModuleBasic{})
 
 	rootCmd := starter.NewCLICommand()
 
